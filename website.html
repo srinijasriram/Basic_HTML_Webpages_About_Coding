@@ -1,0 +1,27 @@
+<html>
+<head><title>welcome</title></head>
+<style>
+    #entry{
+        color: rgb(73, 7, 73);
+        font-size:250%;
+    }
+</style>
+<body style="background-image:url('welcomeimg.jpg');background-size:100% 100%;">
+    <h1 style="color:maroon;font-size:300%;" align="center">WELCOME TO CODING WEBSITE</h1>
+    <center><p style="font-size:150%;">Hello <span id="entry"></span>,<br><br>In This Website Your Going To Learn About What The Programming Languages are, The Most Useful And Important Programming Laguages For Beginners</p></center>
+    <br><br><center><p style="font-size:150%;">Click The Below Button To Enter Into The Home Page</p></center>
+    <br><center><button onclick="location.href='web.html'" style="width:180px;height:50px;color:white;font-size:20;background-color:black;" >Let's Go Into The Page</button></center>
+    </html>  
+<script>
+    name=prompt("Enter your name., to login")
+    if (name.length==0){
+        document.getElementById('entry').innerHTML="Coder"
+    }
+    else if(name==="null"){
+        document.getElementById('entry').innerHTML="Unknown User"
+    }
+    else{
+        document.getElementById('entry').innerHTML=name
+    }
+    
+</script>
